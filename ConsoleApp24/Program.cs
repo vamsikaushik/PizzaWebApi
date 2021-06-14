@@ -13,11 +13,11 @@ namespace ConsoleApp24
 
         static void Main(string[] args)
         {
-            getTheTimezone();
+            GetThePizzaCount();
         }
 
 
-        private static void getTheTimezone()
+        private static void GetThePizzaCount()
         {
             var apiEndpoint = "https://en.wikipedia.org/w/api.php?action=parse&section=0&prop=text&format=json&page=pizza";
             string getJson = CallRestMethod(apiEndpoint);
